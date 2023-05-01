@@ -1,0 +1,40 @@
+<div class="container-fluid">
+  <div class="row">
+    <h1>EL AROMA MÁGICO</h1>
+  </div>
+  <hr class="my-12" />
+  <div class="row">
+    <img
+      src="https://thumbs.dreamstime.com/z/las-tazas-con-caf%C3%A9-dispusieron-en-una-fila-horizontal-119070260.jpg"
+      style="
+        width: 100%;
+        height: 400px;
+      "
+    />
+  </div>
+  <hr class="my-12" />
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Región</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cafe of cafes; index as i">
+          <th scope="row">{{ i + 1 }}</th>
+          <td>{{ cafe.nombre }}</td>
+          <td>{{ cafe.tipo }}</td>
+          <td>{{ cafe.region }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr class="my-12" />
+  <div class="row" *ngFor="let entry of tipos.entries()">
+    <p>Total {{ entry[0] }}: {{ entry[1] }}</p>
+  </div>
+</div>

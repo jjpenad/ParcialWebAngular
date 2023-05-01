@@ -1,0 +1,17 @@
+h1 {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 180%;
+}
+
+table {
+  margin: 15px;
+  width: 80%;
+}
+
+thead {
+  background-color: rgb(35, 35, 73);
+}
+
+thead>tr>th {
+  color: white;
+}
